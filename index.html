@@ -1,19 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="synthwave">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-  tailwind.config = {
-    // Esto es CLAVE para que Tailwind y daisyUI se entiendan vía CDN
-    daisyui: {
-      themes: ["synthwave"], // Aquí defines tu tema
-    },
-  }
-</script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -24,8 +15,6 @@
 </head>
 
 <style>
-  /* OPCIÓN 1: TIPOGRAFÍA FLUIDA */
-  /* Esto hace que 1rem sea dinámico. En 2K el texto será proporcionalmente más grande que en FHD */
   :root {
     font-size: clamp(14px, 0.5vw + 10px, 22px);
   }
@@ -36,7 +25,7 @@
 
   /* Usamos vw para que el nombre ocupe el mismo espacio visual en cualquier monitor */
   #name {
-    font-size: 14vw;
+    font-size: 10vw; /*14vw*/
   }
 
   /* body {
@@ -55,20 +44,20 @@
   }
 </style>
 
-<body class="p-10" style="font-family: Mulish, sans-serif;">
+<body class="p-10 bg-violet-800" style="font-family: Mulish, sans-serif;">
 
   <div id="wrapper" class="">
     <div id="resumen" class="flex gap-16 mb-10">
 
       <div class="izq w-3/12">
         <img id="foto" class=" rounded"
-          src="https://assets-prd.ignimgs.com/2024/03/27/marvelrivals-1711557092104.jpg?crop=1%3A1%2Csmart&format=jpg&auto=webp&quality=80" alt="">
+          src="https://anselmovalenzuela.github.io/img/img-anselmo.jpg" alt="">
         <div id="redes" class="flex flex-wrap ">
-          <a href="" class="text-[2rem] w-full hover:text-accent">
+          <a href="" class="text-[2rem] w-full hover:text-yellow-300">
             <i class="fa-brands fa-linkedin"></i>
             LinkedIn
           </a>
-          <a href="" class="text-[2rem] w-full hover:text-accent">
+          <a href="" class="text-[2rem] w-full hover:text-yellow-300">
             <i class="fa-brands fa-github"></i>
             github
           </a>
@@ -76,15 +65,15 @@
       </div>
 
       <div id="side-data" class="w-7/12">
-        <div id="name" class="heading font-black leading-[0.8]">Jan carlo</div>
+        <div id="name" class="heading text-white font-black leading-[0.8]">Anselmo Valenzuela</div>
         <div id="contact" class="text-xl flex gap-5">
-          <p id="charge" class="text-primary text-xl">Developer</p>
-          <p id="punto">·</p>
-          <p id="correo">andersongenez16@gmail.com</p>
-          <p id="telefono">+543415697700</p>
+          <p id="charge" class="text-pink-500 text-xl">Developer</p>
+          <p id="punto" class="text-white">·</p>
+          <p id="correo" class="text-white">anselmovalenzuela.71@gmail.com</p>
+          <p id="telefono" class="text-white">+543413457700</p>
         </div>
 
-        <div class="bio text-accent text-xl mt-5">
+        <div class="bio text-yellow-300 text-xl mt-5">
           Soy un desarrollador apasionado por la creación de experiencias digitales únicas.
           Me motiva transformar ideas en proyectos funcionales y atractivos, combinando diseño
           y tecnología para lograr soluciones que impacten positivamente. Disfruto aprender
@@ -95,27 +84,27 @@
     </div>
 
     <div class="cards-container flex gap-5 font-medium">
-      <div class="card w-2/6 bg-base-200 shadow-xl">
+      <div class="card p-5 rounded-xl w-2/6 bg-violet-950 shadow-xl">
         <div class="card-body">
-          <h2 id="experiencias" class="heading card-title text-5xl mb-3">Experiencia</h2>
-          <p class="text-secondary text-xl">Más de 5 años liderando proyectos de desarrollo web, gestionando
+          <h2 id="experiencias" class="text-white text-5xl mb-3">Experiencia</h2>
+          <p class="text-cyan-500 text-xl">Más de 5 años liderando proyectos de desarrollo web, gestionando
             equipos multidisciplinarios y asegurando la entrega de soluciones tecnológicas innovadoras en tiempo
             y forma.</p>
         </div>
       </div>
 
-      <div class="card w-2/6 bg-base-200 shadow-xl">
+      <div class="card p-5 rounded-xl w-2/6 bg-violet-950 shadow-xl">
         <div class="card-body">
-          <h2 id="educacion" class="heading card-title text-5xl mb-3">Educación</h2>
-          <p class="text-secondary text-xl">Licenciatura en Ingeniería en Sistemas de Información, Universidad
+          <h2 id="educacion" class="text-white text-5xl mb-3">Educación</h2>
+          <p class="text-cyan-500 text-xl">Licenciatura en Ingeniería en Sistemas de Información, Universidad
             Nacional de Rosario. Cursos complementarios en metodologías ágiles, UX/UI y análisis de datos.</p>
         </div>
       </div>
 
-      <div class="card w-2/6 bg-base-200 shadow-xl">
+      <div class="card p-5 rounded-xl w-2/6 bg-violet-950 shadow-xl">
         <div class="card-body">
-          <h2 id="habilidades" class="heading card-title text-5xl mb-3">Habilidades</h2>
-          <p class="text-secondary text-xl">Dominio de HTML, CSS, JavaScript y frameworks modernos. Experiencia en
+          <h2 id="habilidades" class="text-white text-5xl mb-3">Habilidades</h2>
+          <p class="text-cyan-500 text-xl">Dominio de HTML, CSS, JavaScript y frameworks modernos. Experiencia en
             liderazgo, comunicación efectiva y resolución de problemas complejos. Capacidad para adaptarse
             rápidamente a nuevas tecnologías.</p>
         </div>
